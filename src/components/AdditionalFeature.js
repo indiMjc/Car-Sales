@@ -8,7 +8,6 @@ const AdditionalFeature = props => {
 
 	return (
 		<li>
-			{/* Add an onClick that will let you add a feature to your car */}
 			<button
 				className="button"
 				onClick={() => dispatch(addFeature(props.feature))}
@@ -20,11 +19,4 @@ const AdditionalFeature = props => {
 	);
 };
 
-const mstp = () => {
-	return {};
-};
-
-export default connect(
-	mstp,
-	{ addFeature }
-)(AdditionalFeature);
+export default AdditionalFeature;
